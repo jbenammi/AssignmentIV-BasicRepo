@@ -1,0 +1,48 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: arial, sans-serif;
+}
+#container {
+	width: 960px;
+	margin: 0px auto;
+}
+h1 {
+	margin: 20px;
+}
+#headerp {
+	margin: 20px;
+}
+ol{
+	margin: 20px;
+}
+ol li {
+	padding-bottom: 10px;
+}
+td {
+	padding-left: 20px;
+}
+td:nth-child(2), td:nth-child(3) {
+	text-align: right;
+}
+input {
+	margin-bottom: 5px;
+}
+#ingqty1, #ingqty2, #ingqty3, #ingqty4, #ingqty5, #ingqty6 {
+	width: 100px;
+}
+textarea {
+	width: 355px;
+	height: 100px;
+}
+textarea, input, label {
+	margin-left: 20px;
+}
+fieldset {
+/*	display: inline-block;
+*/	padding: 20px 0px;
+	width: 400px;
+}
+#recipetabs {
+	margin-top: 20px;
+}

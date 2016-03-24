@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Jonathan Ben-Ammi">
+	<title>Assignment IV - Basic Repo</title>
+	<meta name="description" content="This is an git assignment for CodingDojo">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="js/jquery-ui.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="container">
+	<h1>JBA Recipes</h1>
+	<p id="headerp">Select a category to see available recipes.</p>
+	<button id="newrecipe">Add New Recipe</button>
+	<div id="dialog-form" title="Add New Recipe">
+ 
+		<form>
+		    <fieldset>
+			    <label for="recipename">Recipe:</label>
+			    <input type="text" name="recipename" id="recipename" placeholder="Apple Pie" class="text ui-widget-content ui-corner-all"><br>
+			    <label for="ingredient1">Ingredients:</label><br>
+			    <input type="text" name="ingredient" id="ingredient1" placeholder="Apples" class="text ui-widget-content ui-corner-all">
+			    <input type="text" name="qty" id="ingqty1" placeholder="2 lb" class="text ui-widget-content ui-corner-all"><br>
+			    <input type="text" name="ingredient" id="ingredient2" placeholder="Sugar" class="text ui-widget-content -corner-all">
+			     <input type="text" name="qty" id="ingqty2" placeholder="1 lb" class="text ui-widget-content ui-corner-all"><br>
+			    <input type="text" name="ingredient" id="ingredient3" placeholder="Corn Starch" class="text ui-widget-content -corner-all">
+			     <input type="text" name="qty" id="ingqty3" placeholder="2 Tbsp" class="text ui-widget-content ui-corner-all"><br>			     
+			    <input type="text" name="ingredient" id="ingredient4" placeholder="Cinnamon" class="text ui-widget-content -corner-all">
+			     <input type="text" name="qty" id="ingqty4" placeholder="1 Tbsp" class="text ui-widget-content ui-corner-all"><br>
+			    <input type="text" name="ingredient" id="ingredient5" placeholder="Ground Cloves" class="text ui-widget-content -corner-all">
+			     <input type="text" name="qty" id="ingqty5" placeholder="1 tsp" class="text ui-widget-content ui-corner-all"><br>
+			    <input type="text" name="ingredient" id="ingredient6" placeholder="Pie Dough Shells" class="text ui-widget-content -corner-all">
+			     <input type="text" name="qty" id="ingqty6" placeholder="2 Ea" class="text ui-widget-content ui-corner-all"><br>
+			     <textarea id="instruct" placeholder="1. Do this first. 2. Do this next" class="textarea ui-widget-content ui-corner-all"></textarea>
+
+
+			    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+			    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+			 </fieldset>
+		</form>
+	</div>
+
+
+	<div id="recipetabs">
+		<ul>
+			<li><a href="#tabs-1">Breads</a></li>
+			<li><a href="#tabs-2">Pies</a></li>
+			<li><a href="#tabs-3">Misc</a></li>
+			<li><a href="#tabs-4">New Recipes</a></li>
+		</ul>
+		<div id="tabs-1">
+			<div id="accordion">
+				<div class="group">
+					<h3>Pan d' Mie</h3>
+					<div>
+					    	<table>
+					    		<tbody>
+					    			<tr>
+					    				<td>Bread Flour</td>
+					    				<td>100%</td>
+					    				<td>22 oz</td>
+					    			</tr>
+					    			<tr>
+					    				<td>Instant Dry Yeast</td>
+					    				<td>0.9%</td>
+					    				<td>.2 oz</td>
+				    				</tr>
+				    				<tr>
+					    				<td>Salt</td>
+					    				<td>2.3%</td>
+					    				<td>.5 oz</td>
+				    				</tr>
+				    				<tr>
+					    				<td>Sugar</td>
+					    				<td>4.1%</td>
+					    				<td>.9 oz</td>
+				    				</tr>
+					    			<tr>
+					    				<td>Olive Oil</td>
+					    				<td>8.8%</td>
+					    				<td>1.9 oz</td>
+					    			</tr>
+					    			<tr>
+					    				<td>Water</td>
+					    				<td>64.9%</td>
+					    				<td>14.3 oz</td>
+					    			</tr>
+					    		</tbody>
+					    	</table>
+						     <ol>
+						     	<li>Combine flour and yeast. Add the ssalt, sugar, oil and water to the mixer and then add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes and on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+						     	<li>Bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+						     	<li>Divide the dough into pieces 2 lb 8 oz each.</li>
+						     	<li>Preshape the dough into large oblongs 10 in long Let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+						     </ol>
+					</div>
+				</div>
+				<div class="group">
+				    <h3>Challah</h3>
+				    <div>
+				    	<table>
+				    		<tbody>
+				    			<tr>
+				    				<td>Bread Flour</td>
+				    				<td>100%</td>
+				    				<td>22 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Instant Dry Yeast</td>
+				    				<td>0.9%</td>
+				    				<td>.2 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Salt</td>
+				    				<td>2.3%</td>
+				    				<td>.5 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Sugar</td>
+				    				<td>4.1%</td>
+				    				<td>.9 oz</td>
+			    				</tr>
+				    			<tr>
+				    				<td>Olive Oil</td>
+				    				<td>8.8%</td>
+				    				<td>1.9 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Water</td>
+				    				<td>64.9%</td>
+				    				<td>14.3 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Eggs</td>
+				    				<td>1.4%</td>
+				    				<td>5.55 oz</td>
+				     			</tr>
+				    		</tbody>				    		
+				      	</table>
+					    <ol>
+					     	<li>Combine flour and yeast. Add the salt, sugar, oil and water to the mixer. Beat the eggs, reserve 1 tbsp. and add rest to the oil mixture. Add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes and on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+					     	<li>Remove the dough from the bowl and oil it with 1 tbsp oil. Return the dough and bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+					     	<li>Divide the dough into pieces 11 oz each.</li>
+					     	<li>Preshape the dough into balls and let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+					    </ol>
+				    </div>
+				</div>
+				<div class="group">
+				    <h3>Raisin Challah</h3>
+				    <div>
+				    	<table>
+				      		<tbody>
+				    			<tr>
+				    				<td>Bread Flour</td>
+				    				<td>100%</td>
+				    				<td>22 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Instant Dry Yeast</td>
+				    				<td>0.9%</td>
+				    				<td>.2 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Salt</td>
+				    				<td>2.3%</td>
+				    				<td>.5 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Sugar</td>
+				    				<td>4.1%</td>
+				    				<td>.9 oz</td>
+			    				</tr>
+				    			<tr>
+				    				<td>Olive Oil</td>
+				    				<td>8.8%</td>
+				    				<td>1.9 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Water</td>
+				    				<td>64.9%</td>
+				    				<td>14.3 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Eggs</td>
+				    				<td>1.4%</td>
+				    				<td>5.55 oz</td>
+				     			</tr>
+				     			<tr>
+				    				<td>Raisins</td>
+				    				<td>25%</td>
+				    				<td>10 oz</td>
+				    			</tr>	
+				    		</tbody>				    		
+				    	</table>
+					     <ol>
+					     	<li>Combine flour and yeast. Add the salt, sugar, oil and water to the mixer. Beat the eggs, reserve 1 tbsp. and add rest to the oil mixture. Add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes. Add the raisins and continue mixing on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+					     	<li>Remove the dough from the bowl and oil it with 1 tbsp oil. Return the dough and bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+					     	<li>Divide the dough into pieces 11 oz each.</li>
+					     	<li>Preshape the dough into balls and let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+					     </ol>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs-2">
+			<div id="accordion2">
+				<div class="group">
+					<h3>Apple Pie</h3>
+					<div>
+					    	<table>
+					    		<tbody>
+					    			<tr>
+					    				<td>Bread Flour</td>
+					    				<td>100%</td>
+					    				<td>22 oz</td>
+					    			</tr>
+					    			<tr>
+					    				<td>Instant Dry Yeast</td>
+					    				<td>0.9%</td>
+					    				<td>.2 oz</td>
+				    				</tr>
+				    				<tr>
+					    				<td>Salt</td>
+					    				<td>2.3%</td>
+					    				<td>.5 oz</td>
+				    				</tr>
+				    				<tr>
+					    				<td>Sugar</td>
+					    				<td>4.1%</td>
+					    				<td>.9 oz</td>
+				    				</tr>
+					    			<tr>
+					    				<td>Olive Oil</td>
+					    				<td>8.8%</td>
+					    				<td>1.9 oz</td>
+					    			</tr>
+					    			<tr>
+					    				<td>Water</td>
+					    				<td>64.9%</td>
+					    				<td>14.3 oz</td>
+					    			</tr>
+					    		</tbody>
+					    	</table>
+						     <ol>
+						     	<li>Combine flour and yeast. Add the ssalt, sugar, oil and water to the mixer and then add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes and on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+						     	<li>Bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+						     	<li>Divide the dough into pieces 2 lb 8 oz each.</li>
+						     	<li>Preshape the dough into large oblongs 10 in long Let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+						     </ol>
+					</div>
+				</div>
+				<div class="group">
+				    <h3>Pumpkin Pie</h3>
+				    <div>
+				    	<table>
+				    		<tbody>
+				    			<tr>
+				    				<td>Bread Flour</td>
+				    				<td>100%</td>
+				    				<td>22 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Instant Dry Yeast</td>
+				    				<td>0.9%</td>
+				    				<td>.2 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Salt</td>
+				    				<td>2.3%</td>
+				    				<td>.5 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Sugar</td>
+				    				<td>4.1%</td>
+				    				<td>.9 oz</td>
+			    				</tr>
+				    			<tr>
+				    				<td>Olive Oil</td>
+				    				<td>8.8%</td>
+				    				<td>1.9 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Water</td>
+				    				<td>64.9%</td>
+				    				<td>14.3 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Eggs</td>
+				    				<td>1.4%</td>
+				    				<td>5.55 oz</td>
+				     			</tr>
+				    		</tbody>				    		
+				      	</table>
+					    <ol>
+					     	<li>Combine flour and yeast. Add the salt, sugar, oil and water to the mixer. Beat the eggs, reserve 1 tbsp. and add rest to the oil mixture. Add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes and on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+					     	<li>Remove the dough from the bowl and oil it with 1 tbsp oil. Return the dough and bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+					     	<li>Divide the dough into pieces 11 oz each.</li>
+					     	<li>Preshape the dough into balls and let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+					    </ol>
+				    </div>
+				</div>
+				<div class="group">
+				    <h3>Pecan Pie</h3>
+				    <div>
+				    	<table>
+				      		<tbody>
+				    			<tr>
+				    				<td>Bread Flour</td>
+				    				<td>100%</td>
+				    				<td>22 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Instant Dry Yeast</td>
+				    				<td>0.9%</td>
+				    				<td>.2 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Salt</td>
+				    				<td>2.3%</td>
+				    				<td>.5 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Sugar</td>
+				    				<td>4.1%</td>
+				    				<td>.9 oz</td>
+			    				</tr>
+				    			<tr>
+				    				<td>Olive Oil</td>
+				    				<td>8.8%</td>
+				    				<td>1.9 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Water</td>
+				    				<td>64.9%</td>
+				    				<td>14.3 oz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Eggs</td>
+				    				<td>1.4%</td>
+				    				<td>5.55 oz</td>
+				     			</tr>
+				     			<tr>
+				    				<td>Raisins</td>
+				    				<td>25%</td>
+				    				<td>10 oz</td>
+				    			</tr>	
+				    		</tbody>				    		
+				    	</table>
+					     <ol>
+					     	<li>Combine flour and yeast. Add the salt, sugar, oil and water to the mixer. Beat the eggs, reserve 1 tbsp. and add rest to the oil mixture. Add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes. Add the raisins and continue mixing on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+					     	<li>Remove the dough from the bowl and oil it with 1 tbsp oil. Return the dough and bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+					     	<li>Divide the dough into pieces 11 oz each.</li>
+					     	<li>Preshape the dough into balls and let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+					     </ol>
+				    </div>
+				</div>   
+				<div class="group">
+				    <h3>Cherry Pie</h3>
+				    <div>
+				    	<table>
+				      		<tbody>
+				    			<tr>
+				    				<td>Cherries/pitted</td>
+				    				<td>5 lb</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Tapioca Starch</td>
+				    				<td>2 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Salt</td>
+				    				<td>.2 oz</td>
+			    				</tr>
+			    				<tr>
+				    				<td>Sugar</td>
+				    				<td>1 lb</td>
+			    				</tr>
+				    			<tr>
+				    				<td>Lemon Juice</td>
+				    				<td>1.5 floz</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Pie Dough/<a href="">See Misc Recipe</a></td>
+				    				<td>2 lb</td>
+
+				    			</tr>
+				    			<tr>
+				    				<td>Egg Wash/<a href="">See Misc Recipe</a></td>
+				    				<td>As Needed</td>
+				     			</tr>
+				    		</tbody>				    		
+				    	</table>
+					     <ol>
+					     	<li>Combine flour and yeast. Add the salt, sugar, oil and water to the mixer. Beat the eggs, reserve 1 tbsp. and add rest to the oil mixture. Add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes. Add the raisins and continue mixing on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+					     	<li>Remove the dough from the bowl and oil it with 1 tbsp oil. Return the dough and bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+					     	<li>Divide the dough into pieces 11 oz each.</li>
+					     	<li>Preshape the dough into balls and let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+					     </ol>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs-3">
+			<div id="accordion3">
+				<div class="group">
+					<h3 id="piedough">Pie Dough</h3>
+					<div>
+					    	<table>
+					    		<tbody>
+					    			<tr>
+					    				<td>All Purpose Flour</td>
+					    				<td>100%</td>
+					    				<td>3 lb</td>
+					    			</tr>
+				    				<tr>
+					    				<td>Salt</td>
+					    				<td>2.3%</td>
+					    				<td>.5 oz</td>
+				    				</tr>
+					    			<tr>
+					    				<td>Butter/cold</td>
+					    				<td>66.6%</td>
+					    				<td>2 lb</td>
+					    			</tr>
+					    			<tr>
+					    				<td>Water</td>
+					    				<td>33.3%</td>
+					    				<td>1 lb</td>
+					    			</tr>
+					    		</tbody>
+					    	</table>
+						     <ol>
+						     	<li>Combine flour and yeast. Add the ssalt, sugar, oil and water to the mixer and then add the flour and yeast. Mix on low speed with the dough hook attachment for 4 minutes and on medium speed for 4 minutes. The dough should be a little sticky, but with fairly good gluten development. Mix to the intense stage of gluten development.</li>
+						     	<li>Bulk ferment the dough until nearly doubled, about 45 minutes.</li>
+						     	<li>Divide the dough into pieces 2 lb 8 oz each.</li>
+						     	<li>Preshape the dough into large oblongs 10 in long Let the dough rest, covered, until relaxed, 15 to 20 minutes. (Reminder: When Making multiple loaves, workd sequentially, starting with the first piece of dough you divided and rounded.)</li>
+						     </ol>
+					</div>
+				</div>
+				<div class="group">
+				    <h3 id="eggwash">Egg Wash</h3>
+				    <div>
+				    	<table>
+				    		<tbody>
+				    			<tr>
+				    				<td>Egg/large</td>
+				    				<td>1 ea</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Water</td>
+				    				<td>1 floz</td>
+			    				</tr>
+				    		</tbody>				    		
+				      	</table>
+					    <ol>
+					     	<li>Beat together the water and egg and use as needed according to recipe.</li>
+					     	<li>Discard after use.</li>
+					    </ol>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div id='tabs-4'>
+			<div id="accordion4">
+				
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
