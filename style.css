@@ -6,6 +6,8 @@
 #container {
 	width: 960px;
 	margin: 0px auto;
+	background: linear-gradient(#ccccff,#ffffff);
+	padding: 20px;
 }
 h1 {
 	margin: 20px;
